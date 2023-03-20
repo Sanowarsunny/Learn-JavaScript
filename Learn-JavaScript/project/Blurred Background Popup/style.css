@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1672318042589-20f40aa2f135?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
+    text-align: center;
+    transition: filter 0.7s;
+}
+h1{
+    color: rgb(13, 131, 241);
+    font-size: 60px;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px;
+}
+.btn{
+    padding: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.btn:hover{
+    filter: brightness(0.8);
+}
+.active.container{
+    filter: blur(5px) brightness(.7);
+}
+
+.popup-container{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: wheat;
+    height: 200px;
+    width: 400px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: url(https://images.unsplash.com/photo-1672278070098-1ec6bfbfea32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: all 0.7s;
+}
+h4{
+    font-size: 30px;
+    margin: 10px 0;
+    color: darksalmon;
+    font-family: 'Courier New';
+}
+label{
+    color: rgb(239, 12, 12);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-family: 'Courier New';
+}
+.input{
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+.input::placeholder{
+    color: black;
+}
+.popup-btn{
+    background-color: aquamarine;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.close-icon{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-icon:hover{
+    color: olive;
+}
+.active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
