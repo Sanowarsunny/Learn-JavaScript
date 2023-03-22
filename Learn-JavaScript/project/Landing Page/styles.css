@@ -63,12 +63,24 @@ body{
 .services .card-body{
     font-size: 50px;
 }
+.team .card-body{
+    font-size: 20px;
+}
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,.15);
+}
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,.15);
+}
 
 @media only screen and (min-width:768px) and (max-width: 991px){
     .carousel-caption{
         bottom: 370px;
     }
     .carousel-caption p{
+        width: 100%;
+    }
+    .img-area img{
         width: 100%;
     }
 }
@@ -89,5 +101,11 @@ body{
         width: 100%;
         line-height: 1.6;
         font-size: 12px;
+    }
+    .about-text{
+        padding-top: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
     }
 }
