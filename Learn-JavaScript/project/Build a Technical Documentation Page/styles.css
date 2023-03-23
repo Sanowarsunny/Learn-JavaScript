@@ -76,7 +76,13 @@ code {
     margin: 10px;
     border-radius: 5px;
 }
-
+.blog-post__content h2 {
+  font-family: Unna,serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.75rem;
+  margin-top: 3.75rem;
+}
 #main-doc header {
     text-align: left;
     margin: 0px;
