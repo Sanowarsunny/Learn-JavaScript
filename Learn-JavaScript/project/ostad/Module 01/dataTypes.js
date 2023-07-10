@@ -1,8 +1,6 @@
 
 //Assignment: Data Type Practice
 
-
-
 let name = "Sanowar"; // assigning a string value
 
 let age = 24; // assigning a integer value
